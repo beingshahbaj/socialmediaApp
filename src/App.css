@@ -117,11 +117,13 @@ li {
   padding: 10px;
   background-color: rgba(255, 55, 0, 0.888);
 }
-
+ .detail h1{
+  margin: 50px 20px;
+}
 .detail{
   width: 100%;
   height: fit-content;
-  min-height: 100vw;
+  
   padding: 20px 20px;
 }
 

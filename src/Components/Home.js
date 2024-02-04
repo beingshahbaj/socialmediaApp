@@ -10,7 +10,8 @@ function Home() {
   const loading = useSelector(state => state.posts.loading)
   const Navigate = useNavigate();
 
-  // console.log(user);
+  
+  
   
   useEffect(() => {
     dispatch(fetchPosts())
@@ -57,6 +58,7 @@ function Home() {
                   onClick={() => {
                     dispatch(getPost(post));
                     Navigate(`details/${post.id}`);
+
                   }}
                 >
                   arrow_forward_ios
