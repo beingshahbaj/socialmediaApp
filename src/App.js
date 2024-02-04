@@ -1,13 +1,21 @@
 import "./App.css";
-import Postapp from "./components/fetchApi/postApp";
-import FullSong from "./components/song/FullSong";
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import Detail from "./Components/Detail";
+import { Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      
-      {/* <FullSong/> */}
-      <Postapp/>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details/:id" element={<Detail />} >
+         
+        </Route>
+      </Routes>
     </div>
   );
 }
